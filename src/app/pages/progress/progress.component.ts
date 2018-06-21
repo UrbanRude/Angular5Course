@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressComponent implements OnInit {
 
+  porcentaje_1: number = 70;
+  porcentaje_2: number = 20;
+
   constructor() { }
 
   ngOnInit() {
