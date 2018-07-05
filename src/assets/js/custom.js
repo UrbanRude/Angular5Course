@@ -4,7 +4,10 @@ Author: Wrappixel
 Email: niravjoshi87@gmail.com
 File: js
 */
-$(function() {
+
+function init_plugins(){
+
+    $(function() {
     "use strict";
     $(function() {
         $(".preloader").fadeOut();
@@ -119,7 +122,7 @@ $(function() {
     // Perfact scrollbar
     // ============================================================== 
     $('.scroll-sidebar, .right-side-panel, .message-center, .right-sidebar').perfectScrollbar();
-    
+
     // ============================================================== 
     // Resize all elements
     // ============================================================== 
@@ -131,7 +134,7 @@ $(function() {
         $(this).toggleClass("task-done");
     });
 
-    
+
 
     // ============================================================== 
     // Collapsable cards
@@ -154,4 +157,6 @@ $(function() {
         $(this).closest('.card').removeClass().slideUp('fast');
     });
 
-});
+    });
+
+}
