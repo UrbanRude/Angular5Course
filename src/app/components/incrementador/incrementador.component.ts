@@ -22,10 +22,6 @@ export class IncrementadorComponent implements OnInit {
   }
 
   onChange( newValue: number ){
-
-    // let elemHTML:any = document.getElementsByName('porcentaje')[0];
-    // console.log( this.txtProgress );
-
     if( newValue >= 100 ){
       this.porcentaje = 100;
     } else if ( newValue <= 0 ){
@@ -34,8 +30,6 @@ export class IncrementadorComponent implements OnInit {
       this.porcentaje = newValue;
     }
     
-    // elemHTML.value = Number( this.porcentaje );
-
     this.txtProgress.nativeElement.value = this.porcentaje;
 
     this.cambioValor.emit( this.porcentaje );

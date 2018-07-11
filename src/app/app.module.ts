@@ -6,6 +6,7 @@ import { APP_ROUTES } from './app.routes';
 
 /* MODULOS */
 import { PagesModule } from './pages/pages.module';
+import { ServiceModule } from './services/service.module'
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -23,7 +24,8 @@ import { SettingsService } from './services/settings.service';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [
     SettingsService

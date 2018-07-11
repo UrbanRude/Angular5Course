@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { SettingsService } from './services/settings.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +9,9 @@ import { SettingsService } from './services/settings.service';
 })
 export class AppComponent {
 
-  constructor( public _ajustes:SettingsService ){}
+  constructor( public _ajustes:SettingsService ){
+
+  }
 
   title = 'app';
 }
